@@ -1,0 +1,154 @@
+@media screen and (max-width: 1000px) {
+    .firstSection {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .leftSection {
+        margin-top: 50px;
+    }
+
+    .rightSection {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .rightSection img {
+        width: 150%;
+        height: auto;
+    }
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+        display: none;
+        /* hidden by default */
+        border-left: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        background-color: rgb(21, 21, 114);
+
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    nav ul.active {
+        display: flex;
+        /* becomes visible */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container2 {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+        gap: 20px;
+    }
+
+    .right2 {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .left2 img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container3 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 20px;
+    }
+
+    .skills-card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .thirdSection {
+        padding-bottom: 20vh;
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container5 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-right {
+        width: 100%;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer {
+        margin: 30px 50px;
+    }
+}

@@ -1,0 +1,68 @@
+.thirdSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    margin-bottom: 60px;
+}
+
+.thirdSection h1 {
+    font-size: 1.9rem;
+    margin: 50px 0;
+}
+
+.Skills h1 {
+    font-weight: 700;
+    font-size: 2.875rem;
+    line-height: 2.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #9c97f1;
+    margin-bottom: 1.5rem;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.skills-card {
+    background-color: #f7f7ff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(161, 160, 160, 0.712);
+    width: 180px;
+    transition: transform 0.3s ease;
+}
+
+.skills-card:hover {
+    transform: translateY(-5px);
+}
+
+.skills-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.skills-card i {
+    font-size: 40px;
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+
+.bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #6c63ff;
+    height: 100%;
+    border-radius: 10px;
+}

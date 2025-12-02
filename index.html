@@ -8,112 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(3, 13, 58);
-            color: white;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 70px;
-            background-color: rgb(18, 6, 126);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: space-around;
-
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 0.9rem;
-            font-weight: 500;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        nav ul li a:hover {
-            color: rgb(207, 172, 240);
-            font-size: 1.01rem;
-        }
-        main hr {
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 40px 84px;
-        }
-
-        .left {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 0px 0.5px;
-        }
-
-        .firstSection>div {
-            width: 30%;
-        }
-
-        .leftSection {
-            font-size: 2rem;
-        }
-
-        .rightSection img {
-            width: 100%;
-            margin: 5px 0;
-        }
-
-        .purple {
-            color: rgb(163, 93, 228);
-            font-weight: bold;
-        }
-        .text-gray {
-            color: gray;
-            font-size: 0.9rem;
-        }
-
-        #element {
-            color: rgb(163, 93, 228);
-            font-weight: bold;
-        }
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-        .secondSection h1 {
-            font-size: 1.9rem;
-            margin: 0px 0;
-        }
-        footer {
-            background-color: #0e0e1a;
-            height: 200px;
-        }
-        .footer {
-            display: flex;
-            margin: 23px 122px;
-
-        }
-    </style>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- for menu bar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome CDN social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -121,12 +26,16 @@
         <nav>
             <div class="left"> DIVYANSHI'S PORTFOLIO </div>
             <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About Me</a></li>
-                    <li><a href="/">Skills</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                <!-- Hamburger Icon -->
+                <div class="menu-icon" onclick="toggleMenu()">
+                    ☰
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
 
                 </ul>
             </div>
@@ -134,37 +43,183 @@
     </header>
 
     <main>
-        <section class="firstSection">
+        <section class="firstSection" id="home">
             <div class="leftSection">
                 Hi, My name is <span class="purple"> Divyanshi Rajput </span>
                 <div> and I am a passionate </div>
                 <span id="element"></span>
+                <br>
+                <div class="button">
+                    <a href="C:\Users\hp\OneDrive\Desktop\Divyanshi 2020\YouVah\YouVah resume.pdf" target="_blank"
+                        rel="noopener noreferrer" class="resume"> Download Resume </a>
+                    <a href="https://github.com/Divyanshi-R" target="_blank" rel="noopener noreferrer" class="github">
+                        Visit GitHub </a>
+                </div>
             </div>
             <div class="rightSection">
-                <img src="developer.png" alt="developer">
+                <!-- <img src="developer.png" alt="developer"> -->
+                <img src="div_img.JPG" alt="profile">
             </div>
         </section>
         <hr>
-        <section class="secondSection">
-            <span class="text-gray"> What I have done so far </span>
-            <h1> Work Experience </h1>
-        </section>    
+
+        <section class="secondSection" id="about">
+            <div class="AboutMe">
+                <h1> About Me </h1>
+                <div class="container2">
+                    <div class="left2">
+                        <img src="div_img4.jpeg" alt="Divyanshi">
+                    </div>
+                    <div class="right2">
+                        <p>
+                            I am a <span class="purple">Web and Graphics Designer</span> with a passion for creating
+                            visually
+                            appealing and functional designs.
+                            I specialize in designing websites, graphics, and digital content that communicate ideas
+                            clearly
+                            and
+                            engage users effectively.
+                            With a strong focus on aesthetics, usability, and attention to detail, I strive to deliver
+                            designs
+                            that not only look great but also provide meaningful experiences.
+                            I enjoy turning concepts into creative solutions that make a lasting impression.
+                        </p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/divyanshi_20___/?next=%2F" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/divyanshi-rajput-754909360/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Divyanshi-R" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="thirdSection" id="skills">
+            <div class="Skills">
+                <h1> Skills </h1>
+            </div>
+            <div class="container3">
+                <div class="skills-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <div class="bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <div class="bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <div class="bar">
+                        <div class="progress" style="width: 30%"></div>
+                    </div>
+                </div>
+                <!-- Graphics Design Skills -->
+                <div class="skills-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Photoshop</h3>
+                    <div class="bar">
+                        <div class="progress" style="width: 20%"></div>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>Figma</h3>
+                    <div class="bar">
+                        <div class="progress" style="width: 40%"></div>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <i class="fas fa-images"></i>
+                    <h3>Canva</h3>
+                    <div class="bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="fourthSection" id="projects">
+            <div class="Projects">
+                <h1>Projects</h1>
+            </div>
+        </section>
+        <hr>
+
+        <section class="fifthSection" id="contact">
+            <div class="Contact">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="container5">
+                <div class="contact-left">
+                    <p>If you have any project or want to work together, feel free to reach out.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> divyanshi2020r@gmail.com </p>
+                        <p><i class="fas fa-phone"></i> +91 8076335468 </p>
+                        <p><i class="fas fa-map-marker-alt"></i> India </p>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://www.instagram.com/divyanshi_20___/?next=%2F" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/divyanshi-rajput-754909360/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Divyanshi-R" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <input type="text" placeholder="Subject" class="subject">
+                        <textarea rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="send-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
         <div class="footer">
-            <div class="footer-first">
-                <h3>Divyanshi's Portfolio</h3>
+            <div class="footer-up">
+                <h3 class="footer-logo">Divyanshi's Portfolio</h3>
+                <div class="footer-first"> <a href="#home">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div class="footer-second">
+                    <a href="https://www.instagram.com/divyanshi_20___/?next=%2F" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/divyanshi-rajput-754909360/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Divyanshi-R" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="footer-third">
+                    <h3 class="info">Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> divyanshi2020r@gmail.com </p>
+                    <p><i class="fas fa-phone"></i> +91 8076335468 </p>
+                    <p><i class="fas fa-map-marker-alt"></i> India </p>
+                </div>
             </div>
-
-            <div class="footer-second">
-
-            </div>
-            <div class="footer-third">
-
-            </div>
-            <div class="footer-fourth">
-
+            <hr>
+            <div class="footer-down">
+                <p class="footer-copy">© 2025 Divyanshi Rajput | All Rights Reserved</p>
             </div>
         </div>
     </footer>
@@ -175,7 +230,11 @@
             strings: ['Web Developer', 'Graphics Designer'],
             typeSpeed: 50,
         });
-    </script> 
+
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>

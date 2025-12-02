@@ -1,0 +1,20 @@
+.fourthSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    margin-bottom: 60px;
+}
+
+.fourthSection h1 {
+    font-size: 1.9rem;
+    margin: 50px 0;
+}
+
+.Projects h1 {
+    font-weight: 700;
+    font-size: 2.875rem;
+    line-height: 2.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #9c97f1;
+    margin-bottom: 1.5rem;
+}

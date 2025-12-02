@@ -1,0 +1,77 @@
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    margin-bottom: 60px;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+    margin: 50px 0;
+}
+
+
+.AboutMe h1 {
+    font-weight: 700;
+    font-size: 2.875rem;
+    line-height: 2.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #9c97f1;
+    margin-bottom: 1.5rem;
+}
+
+.AboutMe p {
+    font-size: 1.25rem;
+    padding-top: 1.5rem;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0.5px;
+    gap: 100px;
+    padding: 20px;
+
+}
+
+.left2 img {
+    border-radius: 48%;
+    width: 200%;
+    height: 200%;
+}
+
+.right2 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-left: 150px;
+}
+
+.right2 p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #6c63ff;
+    padding: 20px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #4b45d6;
+    transform: scale(1.1);
+}

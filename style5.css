@@ -1,0 +1,116 @@
+.fifthSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 90vh;
+    margin-bottom: 60px;
+}
+
+.fifthSection h1 {
+    font-size: 1.9rem;
+    margin: 50px 0;
+}
+
+.Contact h1 {
+    font-weight: 700;
+    font-size: 2.875rem;
+    line-height: 2.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #9c97f1;
+    margin-bottom: 1.5rem;
+}
+
+.container5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 50px;
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.contact-left p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.contact-info {
+    padding-top: 20px;
+}
+
+.contact-info p {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.contact-info i {
+    color: #6c63ff;
+    font-size: 20px;
+}
+
+.contact-socials {
+    margin-top: 60px;
+}
+
+.contact-socials a {
+    font-size: 22px;
+    margin-right: 15px;
+    color: #fff;
+    background: #6c63ff;
+    padding: 12px 15px;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+.contact-socials a:hover {
+    transform: scale(1.1);
+    background: #4b45d6;
+}
+
+.contact-right {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group input,
+.subject,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 0.9rem;
+    transition: .3s ease;
+}
+
+.send-btn {
+    width: 180px;
+    padding: 15px;
+    background: #6c63ff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.send-btn:hover {
+    background: #4b45d6;
+    transform: scale(1.05);
+}
