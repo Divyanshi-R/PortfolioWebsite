@@ -5,6 +5,13 @@
         text-align: center;
     }
 
+    .thirdSection {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        height: 140vh;
+    }
+
     nav {
         flex-direction: column;
         justify-content: center;
@@ -151,7 +158,8 @@
     .footer {
         margin: 30px 50px;
     }
-    .footer-up{
+
+    .footer-up {
         display: flex;
         flex-direction: column;
         gap: 30px;
